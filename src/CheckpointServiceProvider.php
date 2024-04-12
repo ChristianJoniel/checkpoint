@@ -25,7 +25,7 @@ class CheckpointServiceProvider extends PackageServiceProvider
             ->hasCommand(CheckpointCommand::class)
             ->hasRoute('web')
             ->publishesServiceProvider('CheckpointServiceProvider')
-            ->hasInstallCommand(function(InstallCommand $command){
+            ->hasInstallCommand(function (InstallCommand $command) {
                 $command->publishInertiaComponents();
             });
     }
