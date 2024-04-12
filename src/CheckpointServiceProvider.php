@@ -20,6 +20,7 @@ class CheckpointServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('0001_01_01_000000_create_permission_tables')
+            ->hasInertiaComponents()
             ->hasCommand(CheckpointCommand::class)
             ->hasRoute('web')
             ->publishesServiceProvider('CheckpointServiceProvider');
