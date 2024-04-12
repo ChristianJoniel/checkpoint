@@ -19,7 +19,7 @@ class CheckpointServiceProvider extends PackageServiceProvider
             ->name('checkpoint')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_checkpoint_table')
+            ->hasMigration('0001_01_01_000000_create_permission_tables')
             ->hasCommand(CheckpointCommand::class);
     }
 }
