@@ -1,6 +1,6 @@
 <script setup>
 
-import CheckpointLayout from "Checkpoint/Layouts/CheckpointLayout.vue";
+//import CheckpointLayout from "Checkpoint/Layouts/CheckpointLayout.vue";
 </script>
 
 <template>
