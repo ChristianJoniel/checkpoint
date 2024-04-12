@@ -1,14 +1,14 @@
 <script setup>
 
-import CheckpointLayout from "../Layouts/CheckpointLayout.vue";
+import CheckpointLayout from "Checkpoint/Layouts/CheckpointLayout.vue";
 </script>
 
 <template>
-    <CheckpointLayout>
+<!--    <CheckpointLayout>-->
         <div>
             <h1>Hello World!</h1>
         </div>
-    </CheckpointLayout>
+<!--    </CheckpointLayout>-->
 </template>
 
 <style scoped>
