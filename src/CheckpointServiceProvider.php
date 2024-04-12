@@ -22,7 +22,6 @@ class CheckpointServiceProvider extends PackageServiceProvider
             ->hasMigration('0001_01_01_000000_create_permission_tables')
             ->hasCommand(CheckpointCommand::class)
             ->hasRoute('web')
-            ->publishesServiceProvider('CheckpointServiceProvider')
-        ;
+            ->publishesServiceProvider('CheckpointServiceProvider');
     }
 }
