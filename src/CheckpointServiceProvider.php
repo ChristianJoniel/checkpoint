@@ -3,6 +3,7 @@
 namespace CN\Checkpoint;
 
 use CN\Checkpoint\Commands\CheckpointCommand;
+use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -23,6 +24,9 @@ class CheckpointServiceProvider extends PackageServiceProvider
             ->hasInertiaComponents()
             ->hasCommand(CheckpointCommand::class)
             ->hasRoute('web')
-            ->publishesServiceProvider('CheckpointServiceProvider');
+            ->publishesServiceProvider('CheckpointServiceProvider')
+            ->hasInstallCommand(function(InstallCommand $command){
+                $command->publishInertiaComponents();
+            });
     }
 }
