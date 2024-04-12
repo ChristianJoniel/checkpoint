@@ -2,9 +2,9 @@
 
 namespace CN\Checkpoint\Tests;
 
+use CN\Checkpoint\CheckpointServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use CN\Checkpoint\CheckpointServiceProvider;
 
 class TestCase extends Orchestra
 {
