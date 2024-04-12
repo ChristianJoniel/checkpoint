@@ -2,9 +2,9 @@
 
 namespace CN\Checkpoint;
 
+use CN\Checkpoint\Commands\CheckpointCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use CN\Checkpoint\Commands\CheckpointCommand;
 
 class CheckpointServiceProvider extends PackageServiceProvider
 {
