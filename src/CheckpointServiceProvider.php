@@ -3,7 +3,6 @@
 namespace CN\Checkpoint;
 
 use CN\Checkpoint\Commands\CheckpointCommand;
-use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
